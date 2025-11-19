@@ -4,7 +4,7 @@ ADD requirements.txt /requirements.txt
 RUN pip install -r /requirements.txt
 
 RUN apt-get update && \
-    apt-get install -y netcat-openbsd tcpdump && \
+    apt-get install -y netcat-openbsd tcpdump iproute2 && \
     rm -rf /var/lib/apt/lists/*
 
 ADD src /app
