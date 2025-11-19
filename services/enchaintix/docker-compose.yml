@@ -37,6 +37,7 @@ services:
 
     ports:
       - "5281:5281"
+      - "57012:57012"
 
 volumes:
   postgres_data:
